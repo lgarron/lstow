@@ -1,0 +1,21 @@
+{
+  "name": "lstow",
+  "description": "Simple `stow` alternative",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/main.ts",
+  "bin": "./src/bin/main.ts",
+  "exports": {
+    ".": {
+      "import": "./src/main.ts"
+    }
+  },
+  "dependencies": {
+    "cmd-ts-too": "^0.15.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "latest"
+  },
+  "files": ["./src"]
+}
