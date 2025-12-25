@@ -14,7 +14,7 @@ export async function lstow(args: {
   mkdirDestinationRootIfMissing?: boolean;
 }) {
   const sourceDir = new Path(args.sourceDir);
-  const destinationDir = new Path(args.sourceDir);
+  const destinationDir = new Path(args.destinationDir);
   if (!(await sourceDir.exists())) {
     throw new Error(`Source dir does not exist: ${sourceDir}`);
   }
