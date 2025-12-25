@@ -1,7 +1,7 @@
 {
   "name": "lstow",
   "description": "Simple `stow` alternative",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "main": "./src/main.ts",
   "bin": "./src/bin/main.ts",
@@ -17,5 +17,7 @@
     "@biomejs/biome": "^1.9.4",
     "@types/bun": "latest"
   },
-  "files": ["./src"]
+  "files": [
+    "./src"
+  ]
 }
