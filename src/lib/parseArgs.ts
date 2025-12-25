@@ -38,7 +38,7 @@ export function parseArgs() {
     }),
     {
       programName: new Path(argv[1]).basename.path,
-      description: message`The commandline tool of the future!`,
+      description: message`Simple \`stow\` alternative.`,
       help: "option",
       completion: {
         mode: "option",
