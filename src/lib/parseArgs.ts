@@ -19,7 +19,7 @@ export function parseArgs() {
       mkdirDestinationRootIfMissing: optional(
         map(
           option(
-            "-mkdir-destination-root-if-missing",
+            "--mkdir-destination-root-if-missing",
             choice(["true", "false"]),
           ),
           Boolean,
