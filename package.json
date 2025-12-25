@@ -13,7 +13,7 @@
     ".": {
       "default": "./src/lib/index.ts"
     },
-    "./bin": {
+    "./bin/run": {
       "default": "./src/bin/main.ts"
     }
   },
