@@ -1,9 +1,9 @@
 {
   "lockfileVersion": 1,
-  "configVersion": 0,
+  "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "jstow",
+      "name": "lstow",
       "dependencies": {
         "@optique/core": "^0.8.2",
         "@optique/run": "^0.8.2",

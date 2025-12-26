@@ -1,4 +1,4 @@
-# jstow
+# lstow
 
 To install dependencies:
 
