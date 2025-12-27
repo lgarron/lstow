@@ -1,6 +1,6 @@
 {
   "name": "lstow",
-  "version": "0.5.2",
+  "version": "0.5.3-dev",
   "description": "Simple `stow` alternative.",
   "author": "Lucas Garron <code@garron.net>",
   "license": "MIT",
