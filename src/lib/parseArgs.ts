@@ -22,7 +22,7 @@ export function parseArgs() {
             "--mkdir-destination-root-if-missing",
             choice(["true", "false"]),
           ),
-          Boolean,
+          JSON.parse,
         ),
       ),
       sourceDir: map(
