@@ -5,8 +5,8 @@
     "": {
       "name": "lstow",
       "dependencies": {
-        "@optique/core": "^0.8.2",
-        "@optique/run": "^0.8.2",
+        "@optique/core": ">=0.8.2",
+        "@optique/run": ">=0.8.2",
         "path-class": ">=0.11.2",
       },
       "devDependencies": {
