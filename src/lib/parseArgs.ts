@@ -41,11 +41,16 @@ export function parseArgs() {
       description: message`Simple \`stow\` alternative.`,
       help: "option",
       completion: {
-        mode: "option",
-        name: "plural",
+        option: {
+          names: ["--completions"],
+          hidden: false,
+        },
       },
       version: {
-        mode: "option",
+        option: {
+          names: ["--version"],
+          hidden: false,
+        },
         value: VERSION,
       },
     },
