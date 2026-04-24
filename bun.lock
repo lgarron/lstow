@@ -5,7 +5,7 @@
     "": {
       "name": "lstow",
       "dependencies": {
-        "@optique/core": ">=0.8.2",
+        "@optique/core": "^1.0.2",
         "@optique/run": ">=0.8.2",
         "path-class": ">=0.11.2",
       },
@@ -91,7 +91,7 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.27.2", "", { "os": "win32", "cpu": "x64" }, "sha512-sRdU18mcKf7F+YgheI/zGf5alZatMUTKj/jNS6l744f9u3WFu4v7twcUI9vu4mknF4Y9aDlblIie0IM+5xxaqQ=="],
 
-    "@optique/core": ["@optique/core@0.8.2", "", {}, "sha512-1HpMeh8RQEYXIfWbcjmGYTbSwLE5qw6VwFWNMhkXQFkIGvWdWv7KNL2CM5dUW3Ku7vU0TCwIgM5GlAD7cmm5fg=="],
+    "@optique/core": ["@optique/core@1.0.2", "", {}, "sha512-znsqMmjAdeOgSJzdJlpZpgAscojwQmeQYXzYnuEKllz5VCj6WyEkdzU4QuvJQtWQY3ve2taXwudEBRur0VHBOQ=="],
 
     "@optique/run": ["@optique/run@0.8.2", "", { "dependencies": { "@optique/core": "0.8.2" } }, "sha512-f1uamI8f/OUgblA12CQue0Gyhw4QWXh9ZiqRXktycnRD5XRS7yb+YxTPz3vbwQ4JePkmFwt/ZTbYvXNr+PrT+Q=="],
 
@@ -114,5 +114,7 @@
     "undici-types": ["undici-types@7.16.0", "", {}, "sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw=="],
 
     "xdg-basedir": ["xdg-basedir@5.1.0", "", {}, "sha512-GCPAHLvrIH13+c0SuacwvRYj2SxJXQ4kaVTT5xgL3kPrz56XxkF21IGhjSE1+W0aw7gpBWRGXLCPnPby6lSpmQ=="],
+
+    "@optique/run/@optique/core": ["@optique/core@0.8.2", "", {}, "sha512-1HpMeh8RQEYXIfWbcjmGYTbSwLE5qw6VwFWNMhkXQFkIGvWdWv7KNL2CM5dUW3Ku7vU0TCwIgM5GlAD7cmm5fg=="],
   }
 }
