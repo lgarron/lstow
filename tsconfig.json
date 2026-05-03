@@ -1,7 +1,9 @@
 {
-  "extends": "./node_modules/@cubing/dev-config/ts/es2022-types/no-dom/tsconfig.json",
+  "extends": "./node_modules/@cubing/dev-config/ts/es2022-types/tsconfig.json",
   "compilerOptions": {
-    "noEmit": true
+    "lib": ["dom", "ESNext.Disposable"],
+    "noEmit": true,
+    "types": ["node"]
   },
   "exclude": ["./dist/"]
 }

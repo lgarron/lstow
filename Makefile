@@ -2,9 +2,15 @@
 check: lint check-package.json
 
 .PHONY: lint
-lint: setup
+lint: lint-biome lint-typescript
+
+.PHONY: lint-biome
+lint-biome: setup
 	bun x @biomejs/biome check
-	bun x -- bun-dx --package typescript tsc -- --noEmit --project ./tsconfig.json
+
+.PHONY: lint-typescript
+lint-typescript: setup
+	bun x -- bun-dx --package @typescript/native-preview tsgo -- --project ./tsconfig.json
 
 .PHONY: format
 format: setup
