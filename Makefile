@@ -21,7 +21,7 @@ format: format-biome format-readme-cli-help
 
 .PHONY: format-biome
 format-biome: setup
-	bun x @biomejs/biome check --write
+	bun x -- bun-dx --package @biomejs/biome biome -- check --write
 
 .PHONY: format-readme-cli-help
 format-readme-cli-help: setup
@@ -29,7 +29,7 @@ format-readme-cli-help: setup
 
 .PHONY: setup
 setup:
-	bun install --frozen-lockup
+	bun install --frozen-lockfile
 
 .PHONY: check-package.json
 check-package.json:
@@ -42,10 +42,11 @@ publish:
 .PHONY: prepublishOnly
 prepublishOnly: clean check
 
+RM_RF = bun -e 'process.argv.slice(1).map(p => process.getBuiltinModule("node:fs").rmSync(p, {recursive: true, force: true, maxRetries: 5}))' --
+
 .PHONY: clean
 clean:
 
 .PHONY: reset
 reset: clean
-	rm -rf ./node_modules
-
+	${RM_RF} ./node_modules/
