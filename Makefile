@@ -12,9 +12,20 @@ lint-biome: setup
 lint-typescript: setup
 	bun x -- bun-dx --package @typescript/native-preview tsgo -- --project ./tsconfig.json
 
+.PHONY: lint-readme-cli-help
+lint-readme-cli-help:
+	bun x -- bun-dx --package readme-cli-help readme-cli-help -- check
+
 .PHONY: format
-format: setup
+format: format-biome format-readme-cli-help
+
+.PHONY: format-biome
+format-biome: setup
 	bun x @biomejs/biome check --write
+
+.PHONY: format-readme-cli-help
+format-readme-cli-help: setup
+	bun x -- bun-dx --package readme-cli-help readme-cli-help -- update
 
 .PHONY: setup
 setup:

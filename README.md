@@ -1,15 +1,23 @@
-# lstow
+# `lstow`
 
-To install dependencies:
+Simple `stow` alternative.
 
-```bash
-bun install
-```
+# Help
 
-To run:
+````text help
+Usage: main.ts [--dry-run] [--mkdir-destination-root-if-missing TYPE] SOURCE_DIR DESTINATION_DIR
+       main.ts --help
+       main.ts --version
+       main.ts --completions SHELL [[ARG...]]
 
-```bash
-bun run ./src/main.ts
-```
+Simple `stow` alternative.
 
-This project was created using `bun init` in bun v1.2.4. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+  --dry-run                 
+  --mkdir-destination-root-if-missing TYPE
+  SOURCE_DIR                
+  DESTINATION_DIR           
+  --help                      Show help information.
+  --version                   Show version information.
+  --completions SHELL         Generate shell completion script.
+  ARG                         Command line arguments for completion suggestions (used by shell integration; you usually don't need to provide this).
+````
